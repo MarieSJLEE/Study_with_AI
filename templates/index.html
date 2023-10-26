@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>자기소개서 생성</title>
+</head>
+<body>
+    <h1>자기소개서 생성</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt">
+        <input type="submit" value="파일 읽기">
+    </form>
+    <br>
+    {% if introduction %}
+    <h2>자기소개서:</h2>
+    <p>{{ introduction }}</p>
+    {% endif %}
+</body>
+</html>
